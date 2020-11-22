@@ -1,0 +1,13 @@
+ul,li,body,div,dl,dd,ol,h1,h2,h3,h4,h5,pre,form,fieldset,legend,input{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a,p,article{
+    color: #fff;
+}
+ul,li{
+    list-style: none
+}
