@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class testService {
 
     @Autowired
-    private ISentenceServiceImpl sentenceService;
+    private SentenceService sentenceService;
 
     @Test
     public void test(){

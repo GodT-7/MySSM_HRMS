@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MySSM_HRMS:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e754141-aa86-41d9-8d76-cec8c58c787b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hrms/bean/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/CollectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hrms/dao/CollectionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/CollectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JQ/jquery.ripples-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JQ/jquery.ripples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JS/prefixfree.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/PIC/via.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/xi.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/JQ/jquery.ripples-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/JQ/jquery.ripples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/JS/prefixfree.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/PIC/via.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/bootstrap3.3.7/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/CSS/rest.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JQ/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JQ/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JQ/jquery.ripples-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JQ/jquery.ripples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JQ/jquery插件库.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JS/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/JS/prefixfree.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/PIC/angle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/PIC/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/PIC/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/PIC/via.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/PIC/yi_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/META-INF/MySSM_HRMS.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/bean/Collection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/CollectionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/CollectionDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/CollectionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/SentenceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/su.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/xi.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM_HRMS/xi.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/MySSM_HRMS.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/bean/Collection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/CollectionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/dao/CollectionDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/CollectionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/SentenceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/bean/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/bean/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/SentenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/SentenceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/dao/DepartmentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/dao/EmployeeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/dao/ISentenceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/dao/SentenceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/DepartmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/ISentenceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/SentenceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/testService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/testService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/test/DepartmentDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/test/EmployeeDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MyBatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hrms/dao/DepartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hrms/dao/EmployeeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/rest.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/rest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JS/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JS/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/foot.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeePage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/CSS/rest.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/CSS/rest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/JS/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/JS/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/MyBatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/MyBatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/bean/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/bean/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/DepartmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/ReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/SentenceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/SentenceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/DepartmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/DepartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/EmployeeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/EmployeeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/ISentenceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/SentenceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/DepartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/ISentenceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/testService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/service/testService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/test/DepartmentDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/test/EmployeeDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/commom/foot.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/commom/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/commom/leftsidebar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/departmentAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/departmentPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/departmentUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/employeeAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/employeePage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/employeeUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/jsp/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyBatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyBatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/bean/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/bean/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/DepartmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/ReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/SentenceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/SentenceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/dao/DepartmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/dao/DepartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySSM_HRMS/WEB-INF/classes/com/hrms/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/dao/EmployeeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/dao/EmployeeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/dao/ISentenceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/dao/SentenceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/DepartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/ISentenceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/testService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/testService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/test/DepartmentDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/test/EmployeeDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\ssm\ssm实战\MySSM_HRMS\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jDHlM8Be6HtDEtnVj2o02vFl7S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\webapp" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\target\MySSM_HRMS\WEB-INF" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hrms.service" />
+      <recent name="com.hrms.controller" />
+      <recent name="com.hrms.dao" />
+      <recent name="com.hrms.bean" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\target\MySSM_HRMS\WEB-INF" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\webapp" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\resources" />
+      <recent name="D:\ssm\ssm实战\MySSM_HRMS\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.50">
+    <configuration name="EmployeeDaoTest.getEmpById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySSM_HRMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hrms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.test.EmployeeDaoTest" />
+      <option name="METHOD_NAME" value="getEmpById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDaoTest.updateOneByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySSM_HRMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hrms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.test.EmployeeDaoTest" />
+      <option name="METHOD_NAME" value="updateOneByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.findUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySSM_HRMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hrms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.test.UserTest" />
+      <option name="METHOD_NAME" value="findUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySSM_HRMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hrms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.test.UserTest" />
+      <option name="METHOD_NAME" value="register" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testService.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySSM_HRMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hrms.service" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.service.testService" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.50" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8888/" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="MySSM_HRMS:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_MySSM_HRMS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MySSM_HRMS:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.EmployeeDaoTest.getEmpById" />
+      <item itemvalue="JUnit.EmployeeDaoTest.updateOneByIdTest" />
+      <item itemvalue="JUnit.UserTest.findUserByUsername" />
+      <item itemvalue="JUnit.UserTest.register" />
+      <item itemvalue="JUnit.testService.test" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.50" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.testService.test" />
+        <item itemvalue="JUnit.UserTest.register" />
+        <item itemvalue="JUnit.UserTest.findUserByUsername" />
+        <item itemvalue="JUnit.EmployeeDaoTest.updateOneByIdTest" />
+        <item itemvalue="JUnit.EmployeeDaoTest.getEmpById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.18374316" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\83965\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e754141-aa86-41d9-8d76-cec8c58c787b" name="Default Changelist" comment="" />
+      <created>1603331894784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603331894784</updated>
+      <workItem from="1603331904667" duration="6881000" />
+      <workItem from="1603347601965" duration="43000" />
+      <workItem from="1603351306077" duration="9557000" />
+      <workItem from="1603421235323" duration="4117000" />
+      <workItem from="1603440766387" duration="5904000" />
+      <workItem from="1603460336090" duration="5519000" />
+      <workItem from="1603622537893" duration="3653000" />
+      <workItem from="1603963056211" duration="727000" />
+      <workItem from="1604045771344" duration="3381000" />
+      <workItem from="1604222770112" duration="1994000" />
+      <workItem from="1604392399748" duration="1152000" />
+      <workItem from="1604407603388" duration="623000" />
+      <workItem from="1606014773174" duration="3673000" />
+      <workItem from="1606027931243" duration="15861000" />
+      <workItem from="1606049903849" duration="7238000" />
+      <workItem from="1606099503974" duration="6754000" />
+      <workItem from="1606117634768" duration="5779000" />
+      <workItem from="1606127470116" duration="6853000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1606051737873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606051737873</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606032312361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1603336567128" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606032312361" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1606123489896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1603338802100" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606123489896" />
+    <state x="277" y="155" key="CommitChangelistDialog2" timestamp="1606137299622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="331" y="7" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604048212486" />
+    <state x="277" y="155" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606137299622" />
+    <state x="879" y="170" key="FileChooserDialogImpl" timestamp="1606137204466">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604223391388" />
+    <state x="879" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606137204466" />
+    <state width="565" height="172" key="GridCell.Tab.0.bottom" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.0.center" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.0.left" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.0.right" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.1.bottom" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.1.center" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.1.left" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.1.right" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.2.bottom" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.2.center" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.2.left" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state width="565" height="172" key="GridCell.Tab.2.right" timestamp="1606136708218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="501" height="213" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049705695" />
+    <state width="565" height="172" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606136708218" />
+    <state x="489" y="123" key="RollbackChangesDialog" timestamp="1604047160145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="489" y="123" key="RollbackChangesDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604047160145" />
+    <state x="411" y="37" key="SettingsEditor" timestamp="1606136983175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604048141112" />
+    <state x="411" y="37" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606136983175" />
+    <state x="534" y="155" key="Vcs.Push.Dialog.v2" timestamp="1606051938958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="534" y="155" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606051938958" />
+    <state x="581" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604045852755">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="581" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604045852755" />
+    <state x="178" y="107" key="new project wizard" timestamp="1604049075450">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="107" key="new project wizard/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1604049075450" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1606128855883">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606128855883" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606043704729">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1603444580162" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606043704729" />
+    <state x="538" y="101" key="svn.repositoryBrowser" timestamp="1603963297216">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="538" y="101" key="svn.repositoryBrowser/0.0.1536.824@0.0.1536.824" timestamp="1603963297216" />
+    <state x="575" y="317" key="svn.upgradeDialog" timestamp="1603963298720">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="575" y="317" key="svn.upgradeDialog/0.0.1536.824@0.0.1536.824" timestamp="1603963298720" />
+  </component>
+</project>

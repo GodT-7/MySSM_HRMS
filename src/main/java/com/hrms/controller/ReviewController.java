@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -40,6 +41,7 @@ public class ReviewController {
     }
 
 
+    @ResponseBody
     @RequestMapping("/getReview")
     public JsonMsg getReview(@RequestParam(value = "page",required = true,defaultValue = "1")Integer page,
                              @RequestParam(value = "size",required = true,defaultValue = "4")Integer size,HttpSession session){

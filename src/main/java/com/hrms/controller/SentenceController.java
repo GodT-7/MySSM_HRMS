@@ -2,15 +2,13 @@ package com.hrms.controller;
 
 import com.hrms.bean.Sentence;
 import com.hrms.bean.User;
-import com.hrms.service.ISentenceServiceImpl;
+import com.hrms.service.SentenceService;
 import com.hrms.util.JsonMsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 
@@ -23,7 +21,7 @@ import javax.servlet.http.HttpSession;
 public class SentenceController {
 
     @Autowired
-    private ISentenceServiceImpl sentenceService;
+    private SentenceService sentenceService;
 
     @ResponseBody
     @RequestMapping("/findNextSentence")
@@ -31,7 +29,7 @@ public class SentenceController {
         Sentence sentence = sentenceService.findNextSentence();
         if (sentence == null)
             return JsonMsg.fail().addInfo("error", "查找错误");
-        return JsonMsg.success().addInfo("sentence", sentence.getSentence());
+        return JsonMsg.success().addInfo("sentence",sentence);
     }
 
     @ResponseBody

@@ -22,8 +22,13 @@
     <!--  全局样式  -->
     <link rel="stylesheet" href="../../CSS/rest.css">
     <link rel="stylesheet" href="../../CSS/index.css">
+    <!-- 全局js-->
+    <script src="../../JS/index.js"> </script>
+    <script src="../../JS/prefixfree.min.js"> </script>
+    <script src="../../JS/animate.js"></script>
     <!--响应式框架js-->
-    <script src="JS/index.js"> </script>
+    <script src="../../JQ/jquery.ripples.js"></script>
+    <script src="../../JS/index.js"></script>
     <script rel="stylesheet" src="../../JQ/jquery-3.3.1.min.js"></script>
 <%--    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>--%>
 
@@ -33,47 +38,159 @@
 
 </head>
 <body>
-<!--头部  -->
-<header>
-    <div class="logo">
+    <!--头部  -->
+    <header>
+        <div class="logo">
+        </div>
+        <div class="time">
+        </div>
+        <!-- 登陆接口-->
+        <div class="login_win" id="login_win">
+            <img src="PIC/via.jpg" alt="via" id="img_">
+        </div>
+    </header>
+    <!-- content   -->
+    <article>
+        <span>生而为人，我很抱歉</span>
+        <p id="author">太宰治</p>
+    </article>
+    <section>
+        <button class="btn" id="next_btn">
+            <b>再来一句</b>
+            <canvas width="120" height="40"></canvas>
+        </button>
+        <span class="glyphicon glyphicon-heart" id="heart"></span>
+        <button class="btn">
+            <b>复制</b>
+            <canvas width="120" height="40"></canvas>
+        </button>
+    </section>
+    <!--  音乐接口   -->
+    <div class="music">
+        <audio autoplay loop   src="xi.mp3" >
+        </audio>
     </div>
-    <!-- 登陆接口-->
-    <div class="login">
-        登陆接口
-    </div>
-</header>
-<!-- content   -->
-<article>
-    <span id="sentence">人在饿的时候会选择不爱的食物，会在寂寞的时候选择不爱的人。因为强扭的瓜不甜，但是解渴。</span>
-    <span id="sentence_author">12</span>
-</article>
-<section>
-    <button class="btn" id="next_btn">
-        再来一句
-    </button>
-    <button class="btn">
-        <b>复制</b>
-    </button>
-</section>
-<!-- footer   -->
-<footer>
-    <p><a href="script:;">提交新的句子</a></p>
-    <p><a href="script:;">用法</a> </p>
-</footer>
+    <!-- footer   -->
+    <footer>
+        <p><a href="script:;">提交新的句子</a></p>
+        <p><a href="script:;">用法</a></p>
+        <p style="font-size: 10px">版权所有<em>©</em>thk&ksr</p>
+    </footer>
+
+    <!--模态框-->
+    <form action="" method="post" enctype="multipart/form-data" class="login_form" id="form_">
+        <div class="title">
+            登陆到网易云
+            <span> <a href="script:;"><i class="glyphicon glyphicon-remove"></i></a></span>
+        </div>
+        <div class="login_input">
+            <div class="login_content"> 用&nbsp;户&nbsp;名&nbsp;：<input type="tel" name="username" id="username" autocomplete="off"></div>
+            <div class="login_content"> 登陆密码：<input type="password" name="password" id="password" autocomplete="off"></div>
+        </div>
+        <div class="login_btn">
+            <a href="javascript:;" id="login-button-submit">登录会员</a>
+        </div>
+        <div class="go_register">
+            <a href="javascript:;"> 啊咧~没有账号，去注册~</a>
+        </div>
+    </form>
+    <div class="login_hidden"></div>
+
 
 <script type="text/javascript">
+    var heart1 = document.querySelector('section').querySelector('span');
+    heart1.setAttribute("sentenceId",1);
     $(function () {
         $("#next_btn").click(function () {
-
             $.ajax({
                 url:"/sentence/findNextSentence",
                 type:"GET",
                 success:function (result) {
                     if(result.code == 100){
                         let span = document.querySelector("span");
-                        span.innerHTML=result.extendInfo.sentence;
+                        var sentence = result.extendInfo.sentence;
+                        span.innerHTML=sentence.sentence;
+                        let p = document.querySelector("p");
+                        p.innerHTML=sentence.author;
+                        heart1.setAttribute("sentenceId",sentence.id);
+                        $.ajax({
+                            url:"/collection/collected?sentenceId="+heart1.getAttribute("sentenceId"),
+                            type:"GET",
+                            success:function (result) {
+                                if(result.code == 100){
+                                    let isok = result.extendInfo.isok;
+                                    if(isok == "isok_collect"){
+                                        heart1.style.color = 'deepskyblue';
+                                    }else{
+                                        heart1.style.color = 'black';
+                                    }
+                                }
+                            }
+                        });
                     }else {
                         alert(result.extendInfo.error);
+                    }
+                }
+            });
+        });
+
+        $("#heart").click(function () {
+            $.ajax({
+                url:"/collection/collect?sentenceId="+heart1.getAttribute("sentenceId"),
+                type:"GET",
+                success:function (result) {
+                    if(result.code == 100){
+                        let isok = result.extendInfo.isok;
+                        if(isok == "isok_collect"){
+                            heart1.style.color = 'deepskyblue';
+                        }else{
+                            heart1.style.color = 'black';
+                        }
+                    }else {
+                        heart1.style.color = 'black';
+                        let errorMsg = result.extendInfo.error;
+                        if(errorMsg == "没有登陆"){
+                            let login_form = document.querySelector('.login_form');
+                            let mask = document.querySelector('.login_hidden');
+                            motai_start(login_form,mask);
+                        }else
+                            alert(errorMsg);
+                    }
+                }
+            });
+        });
+
+        $("#login-button-submit").click(function () {
+            $.ajax({
+                url:"/wyy/dologin",
+                type:"POST",
+                data:$("#form_").serialize(),
+                success:function (result) {
+                    if(result.code == 100){
+                        let login_form = document.querySelector('.login_form');
+                        let mask = document.querySelector('.login_hidden');
+                        motai_end(login_form,mask);
+                        let login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
+                        let img = document.querySelector('img');                // 获取头像
+                        login_win.style.display = 'block';
+                        img.src = "PIC/via.jpg";
+                        $.ajax({
+                            url:"/collection/collected?sentenceId="+heart1.getAttribute("sentenceId"),
+                            type:"GET",
+                            success:function (result) {
+                                if(result.code == 100){
+                                    let isok = result.extendInfo.isok;
+                                    if(isok == "isok_collect"){
+                                        heart1.style.color = 'deepskyblue';
+                                    }else{
+                                        heart1.style.color = 'black';
+                                    }
+                                }
+                            }
+                        });
+                    }else {
+                        let errorMsg = result.extendInfo.error;
+                        alert(errorMsg);
                     }
                 }
             });

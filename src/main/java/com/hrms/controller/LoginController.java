@@ -51,6 +51,8 @@ public class LoginController {
         if(!u.getPassword().equals(user.getPassword())){
             return JsonMsg.fail().addInfo("error","输入账户密码错误");
         }
+        if(u.getStatus() == 0)
+            return JsonMsg.fail().addInfo("error","您的账户已被禁");
         session.setAttribute("user",u);
         return JsonMsg.success().addInfo("isok","登陆成功");
     }

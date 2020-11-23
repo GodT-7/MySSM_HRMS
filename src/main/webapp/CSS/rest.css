@@ -11,3 +11,10 @@ a,p,article{
 ul,li{
     list-style: none
 }
+input,button,select,textarea{outline:none;}
+*{
+    outline: none;
+}
+a:focus{
+    text-decoration: none;
+}
