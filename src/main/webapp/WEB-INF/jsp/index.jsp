@@ -40,7 +40,7 @@
 <body>
     <!--头部  -->
     <header>
-        <div class="logo">
+        <div class="logo" id="logo">
         </div>
         <div class="time">
         </div>
@@ -72,26 +72,26 @@
     </div>
     <!-- footer   -->
     <footer>
-        <p><a href="script:;">提交新的句子</a></p>
-        <p><a href="script:;">用法</a></p>
+        <p><a href="#">提交新的句子</a></p>
+        <p><a href="#">用法</a></p>
         <p style="font-size: 10px">版权所有<em>©</em>thk&ksr</p>
     </footer>
 
     <!--模态框-->
     <form action="" method="post" enctype="multipart/form-data" class="login_form" id="form_">
         <div class="title">
-            登陆到网易云
-            <span> <a href="script:;"><i class="glyphicon glyphicon-remove"></i></a></span>
+            登陆到网抑云
+            <span> <a href="#"><i class="glyphicon glyphicon-remove"></i></a></span>
         </div>
         <div class="login_input">
             <div class="login_content"> 用&nbsp;户&nbsp;名&nbsp;：<input type="tel" name="username" id="username" autocomplete="off"></div>
             <div class="login_content"> 登陆密码：<input type="password" name="password" id="password" autocomplete="off"></div>
         </div>
         <div class="login_btn">
-            <a href="javascript:;" id="login-button-submit">登录会员</a>
+            <a href="#" id="login-button-submit">登录会员</a>
         </div>
         <div class="go_register">
-            <a href="javascript:;"> 啊咧~没有账号，去注册~</a>
+            <a href="#" id="register"> 啊咧~没有账号，去注册~</a>
         </div>
     </form>
     <div class="login_hidden"></div>
@@ -100,7 +100,17 @@
 <script type="text/javascript">
     var heart1 = document.querySelector('section').querySelector('span');
     heart1.setAttribute("sentenceId",1);
+    var logo = document.querySelector('.logo');
     $(function () {
+        $("#logo").click(function () {
+            $.ajax({
+                url:"/user/loginOut",
+                type:"GET",
+                success:function (result) {
+                }
+            });
+        });
+
         $("#next_btn").click(function () {
             $.ajax({
                 url:"/sentence/findNextSentence",

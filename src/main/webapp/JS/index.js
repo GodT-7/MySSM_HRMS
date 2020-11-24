@@ -80,7 +80,7 @@ window.addEventListener("load" ,function () {
 
     // 页脚跳转
     footer.addEventListener('click',function () {
-        location.href = 'https://gitee.com/KSRsusu';
+        location.href = 'https://github.com/GodT-7/ThkLoveKsr';
     })
 
     // logo 跳转官网
@@ -112,7 +112,6 @@ window.addEventListener("load" ,function () {
 
     // 登录头像转换
     var login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
-    var img = document.querySelector('img');                // 获取头像
     login_win.style.display = 'none';
 
     // button 点击边框取消
@@ -146,15 +145,9 @@ window.addEventListener("load" ,function () {
 
 
     // 提交新句子  模态框
-    var p = document.querySelector('footer').querySelectorAll('p');
     var login_form = document.querySelector('.login_form');
     var mask = document.querySelector('.login_hidden');
     var closebtn = login_form.querySelector('span');
-    for (let i = 0 ; i<p.length ; i++) {
-        p[i].addEventListener('click',function(){
-            motai_start(login_form,mask);
-        })
-    }
     closebtn.addEventListener('click',function () {
         motai_end(login_form,mask);
     })

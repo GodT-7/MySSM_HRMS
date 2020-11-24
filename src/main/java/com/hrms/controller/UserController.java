@@ -41,7 +41,10 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/loginOut")
     public JsonMsg loginOut(HttpSession session){
-        session.removeAttribute("user");
+        User user = (User)session.getAttribute("user");
+        if(user != null)
+            session.removeAttribute("user");
+        System.out.println("hello");
         return JsonMsg.success();
     }
 
