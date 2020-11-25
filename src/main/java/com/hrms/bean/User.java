@@ -12,6 +12,15 @@ public class User {
     private Integer status;
     private String permissions;
     private String name;
+    private String headPhotoSrc;
+
+    public String getHeadPhotoSrc() {
+        return headPhotoSrc;
+    }
+
+    public void setHeadPhotoSrc(String headPhotoSrc) {
+        this.headPhotoSrc = headPhotoSrc;
+    }
 
     public Integer getId() {
         return id;
@@ -70,6 +79,7 @@ public class User {
                 ", status=" + status +
                 ", permissions='" + permissions + '\'' +
                 ", name='" + name + '\'' +
+                ", headPhotoSrc='" + headPhotoSrc + '\'' +
                 '}';
     }
 }

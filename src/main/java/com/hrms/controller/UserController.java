@@ -1,11 +1,11 @@
 package com.hrms.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.hrms.bean.Review;
 import com.hrms.bean.User;
 import com.hrms.service.UserService;
 import com.hrms.util.JsonMsg;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -18,17 +18,26 @@ import java.util.List;
  * @date 2020/11/22 - 11:47
  */
 @RequestMapping("/user")
+@Controller
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-
+    @ResponseBody
+    @RequestMapping("/isLoad")
+    public JsonMsg isLoad(HttpSession session){
+        User user = (User)session.getAttribute("user");
+        if(user != null)
+            return JsonMsg.success().addInfo("u",user);
+        return JsonMsg.fail();
+    }
 
     @ResponseBody
     @RequestMapping("/register")
     public JsonMsg Register(User user,HttpSession session){
         user.setStatus(3);
+        user.setHeadPhotoSrc("auto.png");
         user.setPermissions("ordinary");
         int res = userService.register(user);
         if(res != 1){

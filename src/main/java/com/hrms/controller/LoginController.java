@@ -8,11 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-import sun.awt.SunHints;
-
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -25,18 +20,6 @@ public class LoginController {
 
     @Autowired
     private UserService userService;
-
-    /**
-     * 登陆方法
-     * 跳转到登陆页面去
-     * @return
-     */
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public ModelAndView login(){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("login");
-        return mv;
-    }
 
     /**
      * 登陆操作，判断用户输入的账号密码是否正常，正常就跳转到main方法
@@ -53,27 +36,8 @@ public class LoginController {
         }
         if(u.getStatus() == 0)
             return JsonMsg.fail().addInfo("error","您的账户已被禁");
-        session.setAttribute("user",u);
-        return JsonMsg.success().addInfo("isok","登陆成功");
+        session.setAttribute("u",u);
+        return JsonMsg.success().addInfo("u",u);
     }
-
-    /**
-     * 跳转入主界面
-     * @return
-     */
-    @RequestMapping(value = "/main",method = RequestMethod.GET)
-    public String main(){
-        return "main";
-    }
-
-    /**
-     * 跳转入登陆页面
-     * @return
-     */
-    @RequestMapping(value = "/loginOut",method = RequestMethod.GET)
-    public String loginOut(){
-        return "login";
-    }
-
 
 }

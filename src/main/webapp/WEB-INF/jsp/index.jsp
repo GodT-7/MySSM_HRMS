@@ -46,7 +46,7 @@
         <!-- 登陆接口-->
         <div class="login_win" id="login_win">
             <div class="img-circle" >
-                <img src="../../PIC/via.jpg" alt="via" id="img_">
+                <img src="#" alt="via" id="img_">
             </div>
             <div class="dropdown pull-right">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -59,7 +59,7 @@
                     <li><a href="#">丧</a></li>
                     <li><a href="#">等一个有缘人</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#"> 退出 </a></li>
+                    <li><a href="#" id="loginOut"> 退出 </a></li>
                 </ul>
             </div>
         </div>
@@ -90,7 +90,7 @@
         <p><a href="../../HTML/comment.html">查看评论</a></p>
         <p><a href="#">提交新的句子</a></p>
         <p><a href="#">用法</a></p>
-        <p style="font-size: 10px">版权所有<em>©</em>thk&ksr</p>
+        <p style="font-size: 10px">版权所有<em>©</em>thk/&ksr</p>
     </footer>
 
     <!--模态框-->
@@ -114,15 +114,37 @@
 
 
 <script type="text/javascript">
+    window.onload = function () {
+        $.ajax({
+            url:"/user/isLoad",
+            type:"GET",
+            success:function (result) {
+                if(result.code == 100){
+                    let user = result.extendInfo.u;
+                    let login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
+                    let img = document.querySelector('img');                // 获取头像
+                    login_win.style.display = 'block';
+                    img.src = "../../PIC/" + user.headPhotoSrc;
+
+                }else{
+                    let login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
+                    login_win.style.display = 'none';
+                }
+            }
+        });
+    }
     var heart1 = document.querySelector('section').querySelector('span');
     heart1.setAttribute("sentenceId",1);
     var logo = document.querySelector('.logo');
     $(function () {
-        $("#logo").click(function () {
+        $("#loginOut").click(function () {
             $.ajax({
                 url:"/user/loginOut",
                 type:"GET",
                 success:function (result) {
+                    if(result.code == 100){
+                        location.reload();
+                    }
                 }
             });
         });
@@ -193,13 +215,14 @@
                 data:$("#form_").serialize(),
                 success:function (result) {
                     if(result.code == 100){
+                        let user = result.extendInfo.u;
                         let login_form = document.querySelector('.login_form');
                         let mask = document.querySelector('.login_hidden');
                         motai_end(login_form,mask);
                         let login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
                         let img = document.querySelector('img');                // 获取头像
                         login_win.style.display = 'block';
-                        img.src = "PIC/via.jpg";
+                        img.src = "../../PIC/"+user.headPhotoSrc;
                         $.ajax({
                             url:"/collection/collected?sentenceId="+heart1.getAttribute("sentenceId"),
                             type:"GET",
