@@ -18,7 +18,6 @@
     <!-- 引入响应式css-->
     <link rel="stylesheet" href="../../CSS/bootstrap3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../CSS/bootstrap3.3.7/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../../CSS/bootstrap3.3.7/css/bootstrap-theme.min.css.map">
     <!--  全局样式  -->
     <link rel="stylesheet" href="../../CSS/rest.css">
     <link rel="stylesheet" href="../../CSS/index.css">
@@ -26,9 +25,9 @@
     <script src="../../JS/index.js"> </script>
     <script src="../../JS/prefixfree.min.js"> </script>
     <script src="../../JS/animate.js"></script>
+    <script src="../../JS/function.js"></script>
     <!--响应式框架js-->
     <script src="../../JQ/jquery.ripples.js"></script>
-    <script src="../../JS/index.js"></script>
     <script rel="stylesheet" src="../../JQ/jquery-3.3.1.min.js"></script>
 <%--    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>--%>
 
@@ -46,23 +45,38 @@
         </div>
         <!-- 登陆接口-->
         <div class="login_win" id="login_win">
-            <img src="PIC/via.jpg" alt="via" id="img_">
+            <div class="img-circle" >
+                <img src="../../PIC/via.jpg" alt="via" id="img_">
+            </div>
+            <div class="dropdown pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span id="selectMenus">在线</span>
+                    <span class="caret"></span>
+                    <input type="hidden" name="names" id="names" value="" />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">忙碌</a></li>
+                    <li><a href="#">丧</a></li>
+                    <li><a href="#">等一个有缘人</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"> 退出 </a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
     <!-- content   -->
-    <article>
-        <span>生而为人，我很抱歉</span>
-        <p id="author">太宰治</p>
+    <article class="w">
+        <span id="text">人在饿的时候会选择不爱的食物，会在寂寞的时候选择不爱的人。因为强扭的瓜不甜，但是解渴。</span>
+        <p id="author">thk</p>
     </article>
-    <section>
+    <section class="w">
         <button class="btn" id="next_btn">
-            <b>再来一句</b>
-            <canvas width="120" height="40"></canvas>
+            再来一句
         </button>
         <span class="glyphicon glyphicon-heart" id="heart"></span>
-        <button class="btn">
-            <b>复制</b>
-            <canvas width="120" height="40"></canvas>
+        <button class="btn" id="btn" onclick="copy()">
+            复制
         </button>
     </section>
     <!--  音乐接口   -->
@@ -70,8 +84,10 @@
         <audio autoplay loop   src="xi.mp3" >
         </audio>
     </div>
+
     <!-- footer   -->
-    <footer>
+    <footer class="w">
+        <p><a href="../../HTML/comment.html">查看评论</a></p>
         <p><a href="#">提交新的句子</a></p>
         <p><a href="#">用法</a></p>
         <p style="font-size: 10px">版权所有<em>©</em>thk&ksr</p>
@@ -117,7 +133,7 @@
                 type:"GET",
                 success:function (result) {
                     if(result.code == 100){
-                        let span = document.querySelector("span");
+                        let span = document.querySelector("#text");
                         var sentence = result.extendInfo.sentence;
                         span.innerHTML=sentence.sentence;
                         let p = document.querySelector("p");

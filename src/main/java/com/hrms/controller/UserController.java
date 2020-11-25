@@ -28,7 +28,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/register")
     public JsonMsg Register(User user,HttpSession session){
-        user.setStatus(1);
+        user.setStatus(3);
         user.setPermissions("ordinary");
         int res = userService.register(user);
         if(res != 1){
