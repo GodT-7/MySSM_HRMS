@@ -67,8 +67,8 @@
 
     <!-- content   -->
     <article class="w">
-        <span id="text">人在饿的时候会选择不爱的食物，会在寂寞的时候选择不爱的人。因为强扭的瓜不甜，但是解渴。</span>
-        <p id="author">thk</p>
+        <span id="text">生而为人，我很抱歉</span>
+        <p id="author">太宰治</p>
     </article>
     <section class="w">
         <button class="btn" id="next_btn">
@@ -81,14 +81,14 @@
     </section>
     <!--  音乐接口   -->
     <div class="music">
-        <audio autoplay loop   src="xi.mp3" >
+        <audio autoplay loop  src="../../xi.mp3" id="music">
         </audio>
     </div>
 
     <!-- footer   -->
     <footer class="w">
-        <p><a href="../../HTML/comment.html">查看评论</a></p>
-        <p><a href="#">提交新的句子</a></p>
+        <p><a href="#">查看评论</a></p>
+        <p><a href="#" id="comment">提交新的句子</a></p>
         <p><a href="#">用法</a></p>
         <p style="font-size: 10px">版权所有<em>©</em>thk/&ksr</p>
     </footer>
@@ -125,7 +125,8 @@
                     let img = document.querySelector('img');                // 获取头像
                     login_win.style.display = 'block';
                     img.src = "../../PIC/" + user.headPhotoSrc;
-
+                    let music = document.querySelector('audio');
+                    music.src = "../../xi.mp3";
                 }else{
                     let login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
                     login_win.style.display = 'none';
@@ -133,8 +134,11 @@
             }
         });
     }
+    var span = document.querySelector("#text");
     var heart1 = document.querySelector('section').querySelector('span');
-    heart1.setAttribute("sentenceId",1);
+    if (span.innerHTML == "生而为人，我很抱歉") {
+        heart1.setAttribute("sentenceId", 1);
+    }
     var logo = document.querySelector('.logo');
     $(function () {
         $("#loginOut").click(function () {
@@ -143,7 +147,29 @@
                 type:"GET",
                 success:function (result) {
                     if(result.code == 100){
+                        let login_win  = document.querySelector('.login_win');  // 获取登陆显示窗口
+                        login_win.style.display = 'none';
                         location.reload();
+                    }
+                }
+            });
+        });
+
+        $("#comment").click(function () {
+            $.ajax({
+                url:"/user/isLoad",
+                type:"GET",
+                success:function (result) {
+                    if(result.code == 100){
+                        window.location.href = "/wyy/comment";
+                    }else{
+                        let errorMsg = result.extendInfo.error;
+                        if(errorMsg == "没有登陆"){
+                            let login_form = document.querySelector('.login_form');
+                            let mask = document.querySelector('.login_hidden');
+                            motai_start(login_form,mask);
+                        }else
+                            alert(errorMsg);
                     }
                 }
             });
@@ -155,7 +181,6 @@
                 type:"GET",
                 success:function (result) {
                     if(result.code == 100){
-                        let span = document.querySelector("#text");
                         var sentence = result.extendInfo.sentence;
                         span.innerHTML=sentence.sentence;
                         let p = document.querySelector("p");
@@ -237,6 +262,7 @@
                                 }
                             }
                         });
+                        location.reload();
                     }else {
                         let errorMsg = result.extendInfo.error;
                         alert(errorMsg);

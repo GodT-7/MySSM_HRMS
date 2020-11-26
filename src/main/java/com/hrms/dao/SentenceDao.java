@@ -12,14 +12,15 @@ import org.apache.ibatis.annotations.Select;
 public interface SentenceDao {
     String TABLE_NAME = "sentence";
 
-    String INSERT_FIELDS = "sentence,author,userId";
+    String INSERT_FIELDS = "id,sentence,author,userId";
 
     @Select({"select * from ",TABLE_NAME,"where id = #{id}"})
     public Sentence findNextSentence(Integer id);
 
     @Insert({"INSERT INTO",TABLE_NAME,"(",INSERT_FIELDS,")"+
-            "VALUES(#{sentence},#{author},#{userId})"})
-    public int upload(@Param("userId") Integer userId,
+            "VALUES(#{id},#{sentence},#{author},#{userId})"})
+    public int upload(@Param("id") Integer id,
+                      @Param("userId") Integer userId,
                       @Param("sentence") String sentence,
                       @Param("author") String author);
 

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
 import javax.servlet.http.HttpSession;
 
 /**
@@ -36,8 +38,22 @@ public class LoginController {
         }
         if(u.getStatus() == 0)
             return JsonMsg.fail().addInfo("error","您的账户已被禁");
-        session.setAttribute("u",u);
+        session.setAttribute("user",u);
         return JsonMsg.success().addInfo("u",u);
+    }
+
+    @RequestMapping("/index")
+    public ModelAndView index(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("index");
+        return mv;
+    }
+
+    @RequestMapping("/comment")
+    public ModelAndView comment(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("comment");
+        return mv;
     }
 
 }

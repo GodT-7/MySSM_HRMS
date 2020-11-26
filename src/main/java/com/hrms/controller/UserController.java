@@ -28,9 +28,10 @@ public class UserController {
     @RequestMapping("/isLoad")
     public JsonMsg isLoad(HttpSession session){
         User user = (User)session.getAttribute("user");
+        System.out.println(user);
         if(user != null)
             return JsonMsg.success().addInfo("u",user);
-        return JsonMsg.fail();
+        return JsonMsg.fail().addInfo("error","没有登陆");
     }
 
     @ResponseBody
@@ -53,7 +54,6 @@ public class UserController {
         User user = (User)session.getAttribute("user");
         if(user != null)
             session.removeAttribute("user");
-        System.out.println("hello");
         return JsonMsg.success();
     }
 
