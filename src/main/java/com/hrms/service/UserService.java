@@ -46,4 +46,20 @@ public class UserService {
     public int banned(User user) {
         return userDao.banned(user);
     }
+
+    public int modifyName(Integer id, String name) {
+        return userDao.modifyName(id,name);
+    }
+
+    public int modifyPassWord(Integer id, String password) {
+        return userDao.modifyPassWord(id,password);
+    }
+
+    public int modifyUsername(Integer id, String username) {
+        return userDao.modifyUsername(id,username);
+    }
+
+    public int modifyHeadPhoto(Integer id, String headPhoto) {
+        return userDao.modifyHeadPhoto(id,headPhoto);
+    }
 }

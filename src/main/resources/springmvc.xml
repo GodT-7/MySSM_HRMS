@@ -19,7 +19,7 @@
     <context:component-scan base-package="com.hrms.controller"/>
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"></property>
-        <property name="suffix" value=".jsp"></property>
+        <property name="suffix" value=".html"></property>
     </bean>
 
 </beans>

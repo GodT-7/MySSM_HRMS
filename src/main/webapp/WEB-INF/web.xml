@@ -10,7 +10,7 @@
 
   <!--配置启动页面-->
   <welcome-file-list>
-    <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+    <welcome-file>/WEB-INF/jsp/index.html</welcome-file>
   </welcome-file-list>
 
   <!--配置监听器来为我们创建springIOC容器-->

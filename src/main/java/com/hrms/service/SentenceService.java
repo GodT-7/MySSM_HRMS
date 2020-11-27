@@ -21,10 +21,8 @@ public class SentenceService {
 
     public Sentence findNextSentence() {
         int count = sentenceDao.selectCount();
-        System.out.println(count);
         Random rand = new Random();
         int id = rand.nextInt(count)+1;
-        System.out.println(id);
         return sentenceDao.findNextSentence(id);
     }
 
